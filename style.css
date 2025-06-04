@@ -1,313 +1,120 @@
-/* Root Variables */
-:root {
-    --neon-blue: #00ffff;
-    --neon-pink: #ff00ff;
-    --dark-bg: #0d0d0d;
-    --light-text: #f0f0f0;
-    --accent: #1a1a1a;
-    --font-main: 'Poppins', sans-serif;
-}
-
-/* Global Styles */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: #fff8f0;
+    color: #333;
 }
 
-body {
-    font-family: var(--font-main);
-    background-color: var(--dark-bg);
-    color: var(--light-text);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-a {
-    color: var(--neon-blue);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--neon-pink);
-}
-
-/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
-    background-color: var(--accent);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--neon-blue);
-}
-
-.nav-links a {
-    margin-left: 2rem;
-    font-weight: 500;
-}
-
-.cta-btn {
-    background: var(--neon-pink);
-    border: none;
-    padding: 0.6rem 1.4rem;
-    border-radius: 30px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.cta-btn:hover {
-    background: var(--neon-blue);
-    color: #000;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6rem 5%;
-    min-height: 90vh;
-    background: linear-gradient(135deg, #121212, #1a1a1a);
-    flex-wrap: wrap;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--neon-pink);
-}
-
-.hero-content p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    color: #ccc;
-}
-
-.hero-image img {
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 0 30px var(--neon-blue);
-}
-
-/* Features Section */
-.features {
-    padding: 5rem 5%;
-    background-color: #111;
+    background-color: #d2691e;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-.features h2 {
-    color: var(--neon-blue);
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2.5rem;
-}
-
-.feature-card {
-    background: var(--accent);
-    padding: 2rem;
-    border-radius: 15px;
-    transition: transform 0.3s;
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-}
-
-.feature-card i {
-    font-size: 2.5rem;
-    color: var(--neon-pink);
-    margin-bottom: 1rem;
-}
-
-.feature-card h3 {
-    margin-bottom: 1rem;
-    color: var(--neon-blue);
-}
-
-/* Games Section */
-.games {
-    padding: 5rem 5%;
-    background: #181818;
-    text-align: center;
-}
-
-.games h2 {
-    color: var(--neon-pink);
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-}
-
-.games-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.game-card {
-    background: var(--accent);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
-    transition: transform 0.3s ease;
-}
-
-.game-card:hover {
-    transform: scale(1.05);
-}
-
-.game-card img {
-    width: 100%;
-    display: block;
-}
-
-.game-info {
-    padding: 1rem;
-}
-
-.game-info h3 {
-    color: var(--neon-blue);
-}
-
-/* Footer */
-footer {
-    background: rgba(13, 13, 13, 0.9);
-    color: var(--light-text);
-    padding: 4rem 5%;
-    text-align: center;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 3rem;
-}
-
-.footer-col h3 {
-    color: var(--neon-blue);
-    margin-bottom: 1.5rem;
-}
-
-.footer-col ul {
-    list-style: none;
-}
-
-.footer-col li {
-    margin-bottom: 0.8rem;
-}
-
-.footer-col a {
-    color: var(--light-text);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-col a:hover {
-    color: var(--neon-pink);
-}
-
-.social-links {
+nav {
+    background-color: #f4a261;
     display: flex;
-    gap: 1.5rem;
     justify-content: center;
-    margin-top: 2rem;
+    gap: 40px;
+    padding: 15px 0;
 }
 
-.social-links a {
-    color: var(--light-text);
-    font-size: 1.5rem;
-    transition: color 0.3s;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
-.social-links a:hover {
-    color: var(--neon-blue);
+nav a:hover {
+    text-decoration: underline;
 }
 
-.copyright {
-    margin-top: 2rem;
-    opacity: 0.8;
+main section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d2691e33;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero-image {
-        margin-top: 2rem;
-    }
-}
-/* Animación de aparición */
-.feature-card, .game-card {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
+h1, h2 {
+    color: #d2691e;
 }
 
-.reveal-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* Efecto de iluminación para botones */
-.btn:hover {
-    box-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-/* Efecto para los títulos y textos cuando se les pasa el puntero */
-h1:hover, h2:hover, h3:hover, p:hover {
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #00ffff;
-    transition: all 0.3s ease-in-out;
+.producto {
+    border: 1px solid #d2691e;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    background-color: #fff0e6;
+    padding: 15px;
 }
 
-/* Efecto en las tarjetas de características */
-.feature-card:hover {
-    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-/* Efecto en las tarjetas de juegos */
-.game-card:hover {
-    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
+button {
+    background-color: #d2691e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-/* Efecto para imágenes */
-img:hover {
-    box-shadow: 0 0 20px #ffffff, 0 0 30px #00ffff;
-    transform: scale(1.03);
-    transition: all 0.3s ease-in-out;
+button:hover {
+    background-color: #a0522d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #d2691e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.boton-dofo {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #2a9d8f;
+}
+
+.boton-dofo:hover {
+    background-color: #21867a;
 }
