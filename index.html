@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Artesanías Chic - Página de inicio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mente Sana | Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <h1>Artesanías Chic</h1>
-    <p>Accesorios artesanales hechos con amor y estilo único</p>
-</header>
-
-<nav>
-    <a href="index.html">Página de inicio</a>
-    <a href="tienda.html">Tienda en línea</a>
-    <a href="contacto.html">Página de contacto</a>
-</nav>
-
-<main id="inicio">
-    <section>
-        <h2>Bienvenidos a Artesanías Chic</h2>
-        <p>Somos un grupo apasionado por la moda artesanal que ofrece pulseras y collares únicos hechos a mano. Nuestros productos combinan tradición con tendencias modernas para que luzcas siempre original y elegante.</p>
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Pulseras artesanales" />
-        <p><strong>Integrantes del grupo:</strong></p>
-        <ul>
-            <li>Erickson Acosta</li>
-            <li>Nombre Integrante 2</li>
-            <li>Nombre Integrante 3</li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">🧠 Mente Sana</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda en línea</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
-        <a href="matriz_dofo.html" target="_blank">
-            <button class="boton-dofo">Ver matriz DOFA</button>
-        </a>
-    </section>
-</main>
+      </div>
+    </div>
+  </nav>
 
-<footer>
-    <p>© 2025 Artesanías Chic - Todos los derechos reservados</p>
-</footer>
+  <!-- Hero Section with Carousel -->
+  <header class="container mt-4">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/hero1.jpg" class="d-block w-100" alt="Bienestar emocional">
+        </div>
+        <div class="carousel-item">
+          <img src="img/hero2.jpg" class="d-block w-100" alt="Sesiones de terapia">
+        </div>
+        <div class="carousel-item">
+          <img src="img/hero3.jpg" class="d-block w-100" alt="Talleres grupales">
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <!-- Descripción del negocio -->
+  <section class="container py-5" data-aos="fade-up">
+    <h1 class="text-center mb-4">Bienvenido a Mente Sana</h1>
+    <p class="lead text-center">Te acompañamos en tu proceso de crecimiento personal y emocional. Descubre nuestros servicios de psicoterapia individual, talleres de manejo del estrés y sesiones de mindfulness.</p>
+    <div class="text-center">
+      <a href="dofa.html" class="btn btn-primary">Ver Matriz DOFA</a>
+    </div>
+    <div class="mt-4 text-center">
+      <h5>Integrantes del grupo:</h5>
+      <ul class="list-unstyled">
+        <li>Erickson Acosta</li>
+        <li>Ana López</li>
+        <li>David Martínez</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light text-center py-3">
+    &copy; 2025 Mente Sana. Todos los derechos reservados.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
+
