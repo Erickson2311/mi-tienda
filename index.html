@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Gaming | Level Up Your Game</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Glow Gaming</div>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="cta-btn">Join Now</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Level Up Your Game</h1>
+      <p>Join the ultimate gaming community and dominate the leaderboards. Whether you're a casual player or a pro, we've got something for you.</p>
+      <button class="cta-btn">Get Started</button>
+    </div>
+    <div class="hero-image">
+      <img src="image/profile.jpg" width="550px" alt="Gaming Setup">
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-trophy"></i>
+        <h3>Competitive Tournaments</h3>
+        <p>Join thrilling tournaments and win amazing prizes.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-users"></i>
+        <h3>Active Community</h3>
+        <p>Connect with gamers worldwide and make new friends.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-gamepad"></i>
+        <h3>Exclusive Content</h3>
+        <p>Access premium guides, tips, and strategies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section class="games" id="games">
+    <h2>Popular Games</h2>
+    <div class="games-grid">
+      <div class="game-card">
+        <img src="image/game-card-1.avif" height="200px" alt="Valorant">
+        <div class="game-info">
+          <h3>Valorant</h3>
+          <p>Tactical shooter with unique agent abilities.</p>
+        </div>
+      </div>
+      <div class="game-card">
+        <img src="image/game-card-2.jpeg" height="200px" alt="Fortnite">
+        <div class="game-info">
+          <h3>Fortnite</h3>
+          <p>Battle royale with building mechanics.</p>
+        </div>
+      </div>
+      <div class="game-card">
+        <img src="image/game-card-3.avif" height="200px" alt="League of Legends">
+        <div class="game-info">
+          <h3>League of Legends</h3>
+          <p>Team-based strategy game with champions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Glow Gaming</h3>
+        <p>Your ultimate destination for competitive gaming.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>123 Gaming Street, NY</p>
+        <p>(555) 123-4567</p>
+        <p>info@glowgaming.com</p>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+    </div>
+    <div class="copyright">
+      © 2023 Glow Gaming. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Smooth scroll 
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Scroll animations
+    const scrollElements = document.querySelectorAll('.feature-card, .game-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    scrollElements.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(50px)';
+      el.style.transition = 'all 0.6s ease-out';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
