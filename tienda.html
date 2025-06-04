@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Artesanías Chic - Tienda en línea</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mente Sana | Tienda en Línea</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">🧠 Mente Sana</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda en línea</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<header>
-    <h1>Artesanías Chic</h1>
-    <p>Accesorios artesanales hechos con amor y estilo único</p>
-</header>
-
-<nav>
-    <a href="index.html">Página de inicio</a>
-    <a href="tienda.html">Tienda en línea</a>
-    <a href="contacto.html">Página de contacto</a>
-</nav>
-
-<main id="tienda">
-    <section>
-        <h2>Tienda en línea</h2>
-        <div class="productos">
-
-            <div class="producto">
-                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Pulsera Boho" />
-                <h3>Pulsera Boho Chic</h3>
-                <p>Pulsera de cuero trenzado con detalles en cuentas de colores vivos. Perfecta para un look casual.</p>
-                <p><strong>Precio:</strong> $25.000 COP</p>
-                <button>Compra ahora</button>
+  <main class="container py-5">
+    <h1 class="text-center mb-5">Nuestros Servicios</h1>
+    <div class="row g-4">
+      <!-- Servicio 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/servicio1.jpg" class="card-img-top" alt="Psicoterapia Individual">
+          <div class="card-body">
+            <h5 class="card-title">Sesión de Psicoterapia Individual</h5>
+            <p class="card-text">Apoyo terapéutico individualizado para tu bienestar emocional.</p>
+            <p><strong>$50 USD</strong></p>
+            <div class="d-flex justify-content-between">
+              <a href="https://wa.me/15551234567?text=Quiero%20reservar%20una%20sesión%20de%20psicoterapia" target="_blank" class="btn btn-success">Pagar por WhatsApp</a>
+              <a href="https://www.mercadopago.com.ar/link-de-pago-simulacion" target="_blank" class="btn btn-primary">Pagar por Mercado Pago</a>
             </div>
-
-            <div class="producto">
-                <img src="https://images.unsplash.com/photo-1495224521972-0a3c2d857865?auto=format&fit=crop&w=400&q=80" alt="Collar de plata" />
-                <h3>Collar Plata Minimalista</h3>
-                <p>Collar delicado con colgante de plata, ideal para combinar con cualquier atuendo.</p>
-                <p><strong>Precio:</strong> $45.000 COP</p>
-                <button>Compra ahora</button>
-            </div>
-
-            <div class="producto">
-                <img src="https://images.unsplash.com/photo-1532634726-8b9fb9988d6a?auto=format&fit=crop&w=400&q=80" alt="Pulsera con piedras" />
-                <h3>Pulsera con Piedras Naturales</h3>
-                <p>Hecha a mano con piedras semipreciosas seleccionadas para armonizar tu energía.</p>
-                <p><strong>Precio:</strong> $35.000 COP</p>
-                <button>Compra ahora</button>
-            </div>
-
+          </div>
         </div>
-    </section>
-</main>
+      </div>
+      <!-- Servicio 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/servicio2.jpg" class="card-img-top" alt="Taller de Manejo del Estrés">
+          <div class="card-body">
+            <h5 class="card-title">Taller de Manejo del Estrés</h5>
+            <p class="card-text">Aprende técnicas efectivas para manejar el estrés y la ansiedad.</p>
+            <p><strong>$30 USD</strong></p>
+            <div class="d-flex justify-content-between">
+              <a href="https://wa.me/15551234567?text=Quiero%20inscribirme%20en%20el%20taller%20de%20estrés" target="_blank" class="btn btn-success">Pagar por WhatsApp</a>
+              <a href="https://www.mercadopago.com.ar/link-de-pago-simulacion" target="_blank" class="btn btn-primary">Pagar por Mercado Pago</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Servicio 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/servicio3.jpg" class="card-img-top" alt="Sesión de Mindfulness">
+          <div class="card-body">
+            <h5 class="card-title">Sesión de Mindfulness</h5>
+            <p class="card-text">Meditación guiada para cultivar la atención plena.</p>
+            <p><strong>$20 USD</strong></p>
+            <div class="d-flex justify-content-between">
+              <a href="https://wa.me/15551234567?text=Quiero%20reservar%20una%20sesión%20de%20mindfulness" target="_blank" class="btn btn-success">Pagar por WhatsApp</a>
+              <a href="https://www.mercadopago.com.ar/link-de-pago-simulacion" target="_blank" class="btn btn-primary">Pagar por Mercado Pago</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-<footer>
-    <p>© 2025 Artesanías Chic - Todos los derechos reservados</p>
-</footer>
+  <footer class="bg-dark text-light text-center py-3">
+    &copy; 2025 Mente Sana. Todos los derechos reservados.
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
