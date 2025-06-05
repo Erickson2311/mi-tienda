@@ -1,36 +1,89 @@
+/* Fondo general para la tienda */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
+  background: linear-gradient(135deg, #8b0000, #FF0000);
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h5 {
-  color: #0D1A2B;
+/* Contenedor del carrusel */
+.carousel {
+  background: linear-gradient(135deg, #8b0000, #FF0000);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 30px auto;
 }
 
+/* Imágenes dentro del carrusel */
 .carousel-item img {
-  height: 500px;
+  width: 100%;
+  border-radius: 15px;
   object-fit: cover;
+  max-height: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-footer {
-  background-color: #0D1A2B;
+/* Indicadores del carrusel */
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+  opacity: 0.7;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-.btn-success {
-  background-color: #25D366;
-  border: none;
+.carousel-indicators .active {
+  background-color: #FF0000;
+  opacity: 1;
 }
 
-.btn-primary {
-  background-color: #009EE3;
-  border: none;
+/* Controles del carrusel (anterior/siguiente) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 10px;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
 }
 
-.btn:hover {
-  opacity: 0.9;
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #FF0000;
 }
 
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
+/* Ajustes adicionales para el texto (opcional) */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
 }
+
+/* Ajustar el color del texto del caption */
+.carousel-caption h5,
+.carousel-caption p {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* Ajustar botones de control */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Ajustar altura de contenedor del carrusel */
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Quitar bordes y resaltar la transición */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
